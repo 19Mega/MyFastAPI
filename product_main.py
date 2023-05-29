@@ -17,12 +17,11 @@ def get_productos():
 
 @app.get('/buscar/{product_id}')
 def get_product_id(product_id:str):
-    for producto in productos:
-        if product_id == Producto.id:
-            return producto
-        else:
-            return{'Mensaje':'No se ha encontrado ese producto'}
-
+    for p in productos:
+        if p.id == product_id:
+            return p
+    
+    return{'Mensaje':'No se ha encontrado ese producto'}
 
 @app.post('/nuevoproducto')
 def post_producto(nuevo_producto: Producto):
@@ -30,4 +29,4 @@ def post_producto(nuevo_producto: Producto):
     productos.append(nuevo_producto)
     return{'Mensaje':'Un nuevo producto ha sido creado'}
 
-
+# TODO : DELETE Y UPDATE
