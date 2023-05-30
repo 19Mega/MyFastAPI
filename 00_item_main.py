@@ -1,8 +1,14 @@
 # creacion de una aplicacion FastAPI
-from typing import Union
 from fastapi import FastAPI
-from models.item_model import Item
-from uuid import uuid4 as uuid
+from pydantic import BaseModel
+from typing import Union
+
+class Item(BaseModel):
+    name: str
+    price: float
+    is_offer: Union[bool, None] = None # Union[opciones] = por defecto
+
+
 
 
 app = FastAPI()
