@@ -3,17 +3,13 @@ from pydantic import BaseModel
 from typing import Union
 from enum import Enum
 
-
-
 class Item(str, Enum):
     item_1 = "Caja cuadrada"
     item_2 = "Caja rectangular"
     item_3 = "Caja plana"
-    
-    
+
 
 app = FastAPI()
-
 
 
 @app.get('/')
