@@ -18,6 +18,8 @@ async def root():
 
 
 # USANDO ENUM PARA PARAMETROS NOS PERMITE TENER UNA LISTA DE PARAMETROS A ELEGIR
+# ENUM COMO PARAMETRO DE RUTA
+# PODEMOS DEFINIR A ENUM COMO CONJUNTO DE CONSTANTES
 @app.get('/item/{item_box}')
 async def get_item_name(item_box:Item):
     
