@@ -3,6 +3,10 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+# mix param: 
+# path ( {items_id} )
+# query(q) 
+# body request (item: Item)
 
 class Item(BaseModel):
     name: str
