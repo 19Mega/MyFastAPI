@@ -14,7 +14,6 @@ class Item(BaseModel):
 @app.put('/items/{item_id}')
 async def update_item(item_id: int, item: Item = Body(
     
-    
     example={
         "name": "Foo",
         "description": "A very nice Item",
