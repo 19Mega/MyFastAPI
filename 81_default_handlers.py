@@ -1,3 +1,6 @@
+
+# Sobrescritura de las excepciones de validación
+
 from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import PlainTextResponse
