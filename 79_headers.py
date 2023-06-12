@@ -4,6 +4,7 @@ app = FastAPI()
 
 items = {"foo": "The Foo Wrestlers"}
 
+#incluimos un encabezado personalizado en la respuesta (video 108 FastAPI - John Ortiz Ordoñez - youtube)
 
 @app.get("/items-header/{item_id}")
 async def read_item(item_id: str):

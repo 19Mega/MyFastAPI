@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
+# Exception viene incluido en python, para manejar exceptions
 
 class UnicornException(Exception):
     def __init__(self, name: str):
