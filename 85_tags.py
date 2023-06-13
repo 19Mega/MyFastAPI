@@ -29,3 +29,4 @@ async def read_items():
 @app.get("/users/", tags=["users"])
 async def read_users():
     return [{'username': 'johno'}]
+
