@@ -36,7 +36,6 @@ def fake_hash_password(password: str):
 
 ouath2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-
 class User(BaseModel):
     username: str
     email: str | None = None
