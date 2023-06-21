@@ -6,6 +6,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel
 
 
+
 # Datos de prueba para simular una base de datos:
 fake_users_db = {
     "johndoe": {
@@ -45,7 +46,6 @@ class User(BaseModel):
 
 class UserInDB(User):
     hashed_password: str
-
 
 def get_user(db, username: str):
     """
