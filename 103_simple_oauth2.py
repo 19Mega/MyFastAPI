@@ -27,6 +27,7 @@ fake_users_db = {
 app = FastAPI()
 
 
+
 def fake_hash_password(password: str):
     """
     Simula una función de hash de contraseña.
