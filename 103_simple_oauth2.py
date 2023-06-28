@@ -23,6 +23,7 @@ fake_users_db = {
     },
 }
 
+
 app = FastAPI()
 
 
